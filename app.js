@@ -1,51 +1,51 @@
 console.log("Curso de JS")
 
-// PROYECTO: 1 - Clasificacion de Persona de acuerdo a la edad
+// // PROYECTO: 1 - Clasificacion de Persona de acuerdo a la edad
 
-let continuar = true;
+// let continuar = true;
 
-function calcularAnioNacimiento(edad) {
-    const anioActual = new Date().getFullYear();
-    return anioActual - edad;
-}
-
-while (continuar) {
-  let edad = parseInt(prompt("Ingrese su edad:"));
-
-  if (isNaN(edad)) {        // esta parte calculara lo que no es numero 🤬😡
-    alert("Por Favor, Ingrese una Edad Valida.");
-    continue;
-  }
-
-  if (edad < 18) {
-    alert("Eres un niño o un adolescente.");
-  } else if (edad >= 18 && edad < 65) {
-    alert("Eres un adulto joven.");
-  } else {
-    alert("Eres un adulto mayor.");
-  }
-
-  const anioNacimiento = calcularAnioNacimiento(edad);
-  alert("Año de Nacimiento Aproximado: " + anioNacimiento);
-
-  const respuesta = prompt("Desea continuar? Ingrese 'esc' para salir, o cualquier otra tecla para continuar.");
-
-  if (respuesta !== null && respuesta.toLowerCase() === 'esc') {
-    continuar = false; 
-  }
-}
-
-
-// PROYECTO: 2 - Tabla de Multiplicar opciones de rango y tabla
-
-// let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar:"));
-// let limiteSuperior = parseInt(prompt("Ingrese el limite superior del rango:"));
-
-// for (let i = 1; i <= limiteSuperior; i++) {
-//   let resultado = numero * i;
-//   console.log(`${numero} x ${i} = ${resultado}`);
-//   /* alert(`${numero} x ${i} = ${resultado}`); */
+// function calcularAnioNacimiento(edad) {
+//     const anioActual = new Date().getFullYear();
+//     return anioActual - edad;
 // }
+
+// while (continuar) {
+//   let edad = parseInt(prompt("Ingrese su edad:"));
+
+//   if (isNaN(edad)) {        // esta parte calculara lo que no es numero 🤬😡
+//     alert("Por Favor, Ingrese una Edad Valida.");
+//     continue;
+//   }
+
+//   if (edad < 18) {
+//     alert("Eres un niño o un adolescente.");
+//   } else if (edad >= 18 && edad < 65) {
+//     alert("Eres un adulto joven.");
+//   } else {
+//     alert("Eres un adulto mayor.");
+//   }
+
+//   const anioNacimiento = calcularAnioNacimiento(edad);
+//   alert("Año de Nacimiento Aproximado: " + anioNacimiento);
+
+//   const respuesta = prompt("Desea continuar? Ingrese 'esc' para salir, o cualquier otra tecla para continuar.");
+
+//   if (respuesta !== null && respuesta.toLowerCase() === 'esc') {
+//     continuar = false; 
+//   }
+// }
+
+
+// // PROYECTO: 2 - Tabla de Multiplicar opciones de rango y tabla
+
+// // let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar:"));
+// // let limiteSuperior = parseInt(prompt("Ingrese el limite superior del rango:"));
+
+// // for (let i = 1; i <= limiteSuperior; i++) {
+// //   let resultado = numero * i;
+// //   console.log(`${numero} x ${i} = ${resultado}`);
+// //   /* alert(`${numero} x ${i} = ${resultado}`); */
+// // }
 
 
 
