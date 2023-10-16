@@ -2,70 +2,30 @@ body {
   background-image: url(../imagenes/pi.jpg);
   margin: 0;
   padding: 0;
-  background-size: contain;
+  background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 10%;
+  height: 100vh;
 }
 
-.inputdata {
-  position: absolute;
-  top: 30%;
-  left: 79%;
-  transform: translate(-50%, -50%);
-  max-width: 50vh;
-  background-color: lightgreen;
-  border: solid 1px white;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.inputdata div {
+#resultados {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  background-color: darkolivegreen;
-  width: auto;
+  margin-left: 15px;
+  border: solid 1px white;
+  background: white;
 }
 
-.operation-buttons1 {
-  position: absolute;
-  top: 39%;
-  left: 73%;
-  transform: translate(-50%, -50%);
-  max-width: 50vh;
-  background-color: darkolivegreen;
-  border: solid 1px white;
-}
-
-.operation-buttons2 {
-  position: absolute;
-  top: 39%;
-  left: 77%;
-  transform: translate(-50%, -50%);
-  max-width: 50vh;
-  background-color: darkolivegreen;
-  border: solid 1px white;
-}
-
-.operation-buttons3 {
-  position: absolute;
-  top: 39%;
-  left: 81%;
-  transform: translate(-50%, -50%);
-  max-width: 50vh;
-  background-color: darkolivegreen;
-  border: solid 1px white;
-}
-
-.operation-buttons4 {
-  position: absolute;
-  top: 39%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-  max-width: 50vh;
-  background-color: darkolivegreen;
-  border: solid 1px white;
+#clear-button {
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
