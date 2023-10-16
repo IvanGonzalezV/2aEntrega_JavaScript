@@ -15,17 +15,30 @@ body {
   align-items: center;
   height: 100%;
 }
+.container input {
+  background: darkviolet;
+  color: white;
+  text-align: center;
+}
 
 #resultados {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
   border: solid 1px white;
-  background: white;
+  background: darkorchid;
+  padding: 16px;
+}
+
+.operation-buttons1 {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 17px;
 }
 
 #clear-button {
   margin-left: 15px;
+  background: greenyellow;
 }
 
 /*# sourceMappingURL=estilos.css.map */
