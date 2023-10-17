@@ -1,7 +1,7 @@
 console.log("Curso de JS")
 
 
-// // PROYECTO: 2 - Tabla de Multiplicar opciones de rango y tabla
+/* PROYECTO: 2 - Tabla de Multiplicar opciones de rango y tabla */
 
 let numero = parseInt(prompt("Ingrese el número para definir la tabla a multiplicar:"));
 
@@ -27,7 +27,7 @@ inputElement.value = numero;
 let limiteSuperiorElement = document.getElementById("floatingLimiteSuperior");
 limiteSuperiorElement.value = limiteSuperior;
 
-let clearButton = document.getElementById("clear-button");
+let clearButton = document.getElementById("ui-btn");
 
 function clearResults() {
     resultadosDiv.innerHTML = '';

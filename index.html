@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="icon" href="./imagenes/pi.jpg">
+    <link rel="icon" href="./imagenes/math_2.jpg">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
@@ -13,13 +13,12 @@
     <div class="container">
         <div class="inputdata">
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingInput" placeholder="Enter Number">
-                <label for="floatingInput">Ingrese Operador</label>
+                <input type="number" class="form-control" id="floatingInput" placeholder="Enter Multiplicando">
+                <label for="floatingInput">Operador</label>
             </div>
             <div class="form-floating mb-3">
-                <input type="number" class="form-control" id="floatingLimiteSuperior"
-                    placeholder="Ingrese el límite superior">
-                <label for="floatingLimiteSuperior">Ingrese Límite</label>
+                <input type="number" class="form-control" id="floatingLimiteSuperior" placeholder="Enter Multiplicador">
+                <label for="floatingLimiteSuperior">Límite</label>
             </div>
 
             <div class="operation-buttons1">
@@ -29,10 +28,16 @@
                 <button type="button" class="operation-button" value="divide">➗</button>
             </div>
         </div>
-        <div id="resultados" class="resultados"></div>
-        <button id="clear-button">Clear</button>
-    </div>
+        <div id="resultados" class="resultados">
+        </div>
 
+        <button class="ui-btn">
+            <span>
+                Clear
+            </span>
+        </button>
+
+    </div>
 
 
 
