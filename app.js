@@ -32,6 +32,38 @@ let clearButton = document.getElementById("clear-button");
 function clearResults() {
     resultadosDiv.innerHTML = '';
     inputElement.value = '';
+    limiteSuperiorElement.value = '';
 }
 
 clearButton.addEventListener("click", clearResults);
+
+/* 2a parte */
+
+let ultimasCombinaciones = [];
+
+function registrarCombinacion(numero, limiteSuperior) {
+        ultimasCombinaciones.unshift({ numero, limiteSuperior });
+
+    if (ultimasCombinaciones.length > 20) {
+        ultimasCombinaciones.pop();
+    }
+
+    // Llamada a la función
+    llenarListaDesplegable();
+}
+
+
+function llenarListaDesplegable() {
+    const select = document.getElementById("ultimas-combinaciones");
+
+    select.innerHTML = '<option value="" disabled selected>Última Combinacion</option>';
+
+    for (const combinacion of ultimasCombinaciones) {
+        const option = document.createElement("option");
+        option.value = `${combinacion.numero} * ${combinacion.limiteSuperior}`;
+        option.text = `${combinacion.numero} * ${combinacion.limiteSuperior}`;
+        select.appendChild(option);
+    }
+}
+
+registrarCombinacion(numero, limiteSuperior);

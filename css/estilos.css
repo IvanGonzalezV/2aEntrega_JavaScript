@@ -33,6 +33,7 @@ body {
   flex-direction: column;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 28px;
   border: solid 1px white;
   background: #9932cc;
   padding: 16px;
@@ -45,8 +46,9 @@ body {
   margin-left: 17px;
 }
 
-clear-button {
+#clear-button {
   margin-left: 15px;
+  margin-bottom: 22px;
 }
 
 #clear-button {
@@ -188,6 +190,15 @@ clear-button {
     content: "";
     right: 0;
   }
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 10px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
